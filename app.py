@@ -81,7 +81,7 @@ if st.button("Predict"):
         st.markdown("""
         <h2> Model Comparison </h2>
         """,unsafe_allow_html=True)
-        comp_df = pd.DataFrame({"x: all_model_name, "y":model_prob","Model-Prediction:class_ans"})
+        comp_df = pd.DataFrame({"x": all_model_name, "y":model_prob,"Model-Prediction":class_ans})
         
         import altair as alt
         chart = (alt.Chart(comp_df).mak_bar().encode(
